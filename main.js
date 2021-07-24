@@ -1,18 +1,3 @@
-// var cookBtn = document.querySelector('#lets-cook-btn');
-// var textBox = document.querySelector('#result');
-
-// cookBtn.addEventListener('click', getRadioValue)
-
-// function getRadioValue() {
-//   var radio = document.querySelector('meal-radio');
-//   event.preventDefault();
-//   for (i = 0; i < radio.length; i++){
-//     if(radio[i].checked) 
-//     document.getElementById("result").innerHTML = radio[i].value;
-//     }
-    
-//   }
-
 var sides = [
 "Miso Glazed Carrots",
 "Coleslaw",
@@ -61,27 +46,36 @@ var desserts = [
  "Eclairs",
 ]
 
-
 var result = document.querySelector('p');
-var randomSide = sides[getRandomIndex(sides)];
-var randomMain = mains[getRandomIndex(mains)];
-var randomDessert = desserts[getRandomIndex(desserts)];
-
-function fn1 () {
-  event.preventDefault();
-  var sideRadio = document.getElementById("side-radio");
-  var mainRadio = document.getElementById("main-radio");
-  var dessertRadio = document.getElementById("dessert-radio");
-
-  if (sideRadio.checked === true) {
-    result.innerText = randomSide;
-} else if (mainRadio.checked === true) {
-    result.innerText = randomMain;
- } else if (dessertRadio.checked === true) {
-    result.innertText = randomDessert;
- }
-}
+//var randomSide = sides[getRandomIndex(sides)];
+//var randomMain = mains[getRandomIndex(mains)];
+//var randomDessert = desserts[getRandomIndex(desserts)];
+var cookBtn = document.getElementById('cook-btn');
+var sideRadio = document.getElementById("side-radio");
+var mainRadio = document.getElementById("main-radio");
+var dessertRadio = document.getElementById("dessert-radio");
+var entireMealRadio = document.getElementById("full-meal-radio");
+var h2Ele = document.querySelector('h2');
+var box2Img = document.querySelector('.second-box');
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
+};
+
+cookBtn.addEventListener('click', makeMeal);
+
+function makeMeal() {
+  event.preventDefault();
+  box2Img.classList.add('second-box-hide-bg');
+  h2Ele.classList.remove('hidden');
+  if (sideRadio.checked) {
+      result.innerText = sides[getRandomIndex(sides)];
+    }  else if (mainRadio.checked) {
+        result.innerText = mains[getRandomIndex(mains)];
+     } else if (dessertRadio.checked) {
+          result.innerText = desserts[getRandomIndex(desserts)];
+     } else if (entireMealRadio.checked) {
+          result.innerText = `${mains[getRandomIndex(mains)]} with a side of ${sides[getRandomIndex(sides)]} and ${desserts[getRandomIndex(desserts)]} for dessert!`;
+ }
 }
+

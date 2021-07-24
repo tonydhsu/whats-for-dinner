@@ -18,6 +18,7 @@ body {
 
 .nav-bar {
     background-color: #0fb9b1;
+    display: flex;
     padding: 8px;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -35,12 +36,13 @@ body {
 ;
 }
 
-.two-boxes {
+.boxes-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-self: auto;
     align-items: flex-end;
+    height: 30em;
 }
 
 .looking-for {
@@ -51,20 +53,34 @@ body {
 }
 
 .first-box {
+    height: 14em;
+    width: 14em;
     padding: 50px;
     font-size: 20px;
     background-color: rgba(225, 225, 225, .9);
 }
 
 .second-box {
+    height: 14em;
+    width: 14em;
+    padding: 5em;
     background-image: url(assets/cookpot.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    background-size: 100px;
-    padding: 183px;
-    margin-top: 100px;
+    background-size: 6em;
+    
+    
+    
     background-color: rgba(225, 225, 225, .9);
+}
+
+.second-box-hide-bg {
+    background-image: none;
+}
+
+.hidden {
+    display: none;
 }
 
 form {
@@ -76,7 +92,7 @@ form {
     flex-direction: column;
 }
 
-#lets-cook-btn {
+#cook-btn {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     padding: 5px;
@@ -87,8 +103,14 @@ form {
     border-radius: 8px;
 }
 
-p {
-    font-size: 50px;
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+.output {
+    font-size: 27px;
     font-family: 'Roboto', sans-serif;
 }
 

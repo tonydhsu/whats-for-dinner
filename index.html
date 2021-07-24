@@ -8,10 +8,11 @@
   </head>
   <title>Whats's for Dinner?</title>
   <nav class="nav-bar">What's for Dinner?
+
     <button type="button" class= "add-recipe-button">ADD A RECIPE</button>
   </nav>
   <body>
-    <div class="two-boxes">
+    <section class="boxes-container">
       <div class="first-box">
         <div class="looking-for">What are you looking for?
         </div>
@@ -30,17 +31,18 @@
               Dessert</input>
             </div>
             <div>
-              <input type= "radio" name= "meal-radio" value= "entire-meal-radio">
+              <input id="full-meal-radio" type= "radio" name= "meal-radio" value= "entire-meal-radio">
               Entire Meal</input>     
             </div>
-            <button onclick="fn1()" type="button" id="lets-cook-btn">LET'S COOK!</button>
+            <button id="cook-btn" type="button">LET'S COOK!</button>
           </form>
         </div>
       </div>
       <div class="second-box">
-        <p></p>
+        <h2 class="hidden"><em>You should make:</em></h2>
+        <p class="output"></p>
       </div>
-    </div>
+    </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
   </html>
