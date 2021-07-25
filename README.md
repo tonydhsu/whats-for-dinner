@@ -1,23 +1,29 @@
-# What's for Dinner?
+# Mod1 Solo Project
 
-## Overview
+### What's for Dinner?
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+This app allows the user to decide what to make for dinner!  There are four options a user can select: side, main, dessert, or entire meal.  Selecting one and pushing the button will create a random meal.  Selecting the entire meal option will generate a full meal consisting of a main dish, side and dessert.  After a meal is generated the user has the option to clear the screen and start over.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+<img width="1427" alt="Screen Shot 2021-07-25 at 4 01 14 PM" src="https://user-images.githubusercontent.com/70819338/126914793-8ce602fe-e118-4f83-b6c5-7dcf300867e8.png">
+<img width="718" alt="Screen Shot 2021-07-25 at 4 01 42 PM" src="https://user-images.githubusercontent.com/70819338/126914796-822bfafc-be60-4ffb-a072-583b095f9c83.png">
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+#### Install Instructions:
+[Deploy Link](https://github.com/tonydhsu/whats-for-dinner)
 
-## Learning Goals
+Click on the link above.  Fork the repository and clone to your machine.  Open the index.html file in your favorite browswer and start cooking!
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+#### Technologies:
+- HTML
+- CSS
+- JavaScript
+- Visual Studio Code
 
-## Setup
+#### Future Additions:
+- Ability to make your own meals
+- Ability to save meals and look at them later
+- Login page
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+#### Contributors:
+Tony Hsu (https://github.com/tonydhsu)
+
+[Original Project Specs:](https://frontend.turing.edu/projects/module-1/dinner.html)
